@@ -2,6 +2,7 @@
   "csv_filepath": "GPS80.csv",
   "field_boundaries": [
     {
+      "name": "field_1",
       "NW_corner": {
         "latitude": 45.11060,
         "longitude": -123.28479
@@ -20,9 +21,10 @@
       }
     },
     {
+      "name": "field_2",
       "NW_corner": {
-      "latitude": 45.11055,
-      "longitude": -123.28198
+        "latitude": 45.11055,
+        "longitude": -123.28198
       },
       "NE_corner": {
         "latitude": 45.11053,
