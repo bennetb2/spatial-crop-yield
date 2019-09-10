@@ -1,0 +1,43 @@
+{
+  "csv_filepath": "GPS80.csv",
+  "field_boundaries": [
+    {
+      "name": "field_1",
+      "NW_corner": {
+        "latitude": 45.11060,
+        "longitude": -123.28479
+      },
+      "NE_corner": {
+        "latitude": 45.11055,
+        "longitude": -123.28212
+      },
+      "SW_corner": {
+        "latitude": 45.10146,
+        "longitude": -123.28505
+      },
+      "SE_corner": {
+        "latitude": 45.10206,
+        "longitude": -123.28237
+      }
+    },
+    {
+      "name": "field_2",
+      "NW_corner": {
+        "latitude": 45.11055,
+        "longitude": -123.28198
+      },
+      "NE_corner": {
+        "latitude": 45.11053,
+        "longitude": -123.27968
+      },
+      "SW_corner": {
+        "latitude": 45.10214,
+        "longitude": -123.28225
+      },
+      "SE_corner": {
+        "latitude": 45.10390,
+        "longitude": -123.27981
+      }
+    }
+  ]
+}
