@@ -1,6 +1,7 @@
 {
-  "distance_interval": 0.00005,
-  "csv_filepath": "GPS80.csv",
+  "distance_interval": 0.0005,
+  "grid_interval": 0.05,
+  "csv_directory": "/home/brooke/spatial-crop-yield/2018-Data",
   "field_boundaries": [
     {
       "name": "field_1",
