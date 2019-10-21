@@ -1,7 +1,7 @@
 {
-  "distance_interval": 0.0005,
-  "grid_interval": 0.05,
-  "csv_directory": "/home/brooke/spatial-crop-yield/2018-Data",
+  "distance_interval": 0.00005,
+  "pool_height": 0.00002,
+  "csv_directory": "./yield-data/2018",
   "field_boundaries": [
     {
       "name": "field_1",
