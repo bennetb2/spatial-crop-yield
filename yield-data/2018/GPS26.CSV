@@ -1,0 +1,5 @@
+date,time,fix,quality,lat,long,speed(k),angle,elev,sats,pyron,weight
+date,time,fix,quality,lat,long,speed(k),angle,elev,sats,pyron,weight
+
+0/0/0,20:48:6,0,1,44.849487304, -123.282516479,0.00,0.00,106.50,10,1327.00,1931.37
+10/1/18,20:48:7,1,1,44.849487304, -123.282516479,0.20,68.30,106.50,10,1250.00,1935.
