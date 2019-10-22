@@ -1,8 +1,8 @@
 {
-  "min_distance": 0.00005,
+  "min_distance": 0.00007,
   "max_distance": 0.0005,
   "pool_height": 0.00002,
-  "max_yield_intensity": 5000000,
+  "max_yield_intensity": 2000000,
   "csv_directory": "./yield-data/2018",
   "field_boundaries": [
     {
