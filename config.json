@@ -1,25 +1,27 @@
 {
-  "distance_interval": 0.00005,
+  "min_distance": 0.00005,
+  "max_distance": 0.0005,
   "pool_height": 0.00002,
+  "max_yield_intensity": 5000000,
   "csv_directory": "./yield-data/2018",
   "field_boundaries": [
     {
       "name": "field_1",
       "NW_corner": {
-        "latitude": 45.11060,
-        "longitude": -123.28479
+        "latitude": 45.11055,
+        "longitude": -123.284674
       },
       "NE_corner": {
         "latitude": 45.11055,
-        "longitude": -123.28212
+        "longitude": -123.28213
       },
       "SW_corner": {
         "latitude": 45.10146,
-        "longitude": -123.28505
+        "longitude": -123.28497
       },
       "SE_corner": {
         "latitude": 45.10206,
-        "longitude": -123.28237
+        "longitude": -123.28246
       }
     },
     {
