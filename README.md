@@ -1,1 +1,0 @@
-# spatial-crop-yield

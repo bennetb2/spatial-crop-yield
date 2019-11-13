@@ -1,7 +1,0 @@
-{
-"type": "FeatureCollection",
-"features": [
-{ "type": "Feature", "properties": { "intensity": 1321871.7233693614, "index_right": 0 }, "geometry": { "type": "LineString", "coordinates": [ [ 45.105598449, -123.282295227 ], [ 45.105598449, -123.282341003 ] ] } },
-{ "type": "Feature", "properties": { "intensity": 534611.28871490119, "index_right": 0 }, "geometry": { "type": "LineString", "coordinates": [ [ 45.105598449, -123.282341003 ], [ 45.105598449, -123.282402037999987 ] ] } }
-]
-}
