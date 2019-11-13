@@ -1,0 +1,5 @@
+pandas==0.25.2
+geopandas==0.6.1
+numpy==1.17.3
+Shapely==1.6.4
+spectra==0.0.11
