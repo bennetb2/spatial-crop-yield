@@ -9129,15 +9129,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -12519,7 +12519,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -13033,14 +13033,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -13173,11 +13173,11 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Processing-Hazelnut-Yield">Processing Hazelnut Yield<a class="anchor-link" href="#Processing-Hazelnut-Yield">¶</a></h1><p>The
- raw data provided contains data points with timestamps, GPS 
-coordinates, and collection cart weight. This information was collected 
+ raw data provided contains data points with timestamps, GPS
+coordinates, and collection cart weight. This information was collected
 as a cart moves along rows of trees and harvests nuts.</p>
 <p>The goal is to create a heatmap of productivity. We measure change in
- weight with respect to distance traveled, and pool data from multiple 
+ weight with respect to distance traveled, and pool data from multiple
 harvests into a grid to display the total productivity spatially.</p>
 
 </div>
@@ -13242,7 +13242,7 @@ harvests into a grid to display the total productivity spatially.</p>
         <span class="n">field_df</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span><span class="n">geometry</span><span class="o">=</span><span class="n">gpd</span><span class="o">.</span><span class="n">GeoSeries</span><span class="p">(</span><span class="n">field_polygon</span><span class="p">))</span>
         <span class="n">grid</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">overlay</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">field_df</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">'intersection'</span><span class="p">)</span>
         <span class="n">grids</span><span class="p">[</span><span class="n">field</span><span class="p">[</span><span class="s1">'name'</span><span class="p">]]</span> <span class="o">=</span> <span class="n">grid</span>
-        
+
     <span class="k">return</span> <span class="n">grids</span>
 </pre></div>
 
@@ -13288,8 +13288,8 @@ harvests into a grid to display the total productivity spatially.</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>For each pair of consecutive data points, the intensity is calculated
- as the difference in weight is divided by the distance traveled. The 
-geometry is a line from the first position to the last. Everywhere on 
+ as the difference in weight is divided by the distance traveled. The
+geometry is a line from the first position to the last. Everywhere on
 this line is considered to have the calculated intensity.</p>
 <p>Since all CSVs have been merged into one, pairs with large distances are ignored as they represent moving to a separate harvest.</p>
 
@@ -13380,8 +13380,8 @@ this line is considered to have the calculated intensity.</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>For each field grid, the yield in each cell is summed. For every line
- segment in the cell, the length of the portion within the cell is 
-found, and then scaled by the associated intensity. This produces a 
+ segment in the cell, the length of the portion within the cell is
+found, and then scaled by the associated intensity. This produces a
 change in weight attributable to that cell. These changes in weights are
  summed to produce total yield for the cell.</p>
 
@@ -13423,9 +13423,9 @@ change in weight attributable to that cell. These changes in weights are
                         <span class="n">initial_point</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 
                     <span class="n">distance</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoSeries</span><span class="p">(</span><span class="n">initial_point</span><span class="p">)</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">gpd</span><span class="o">.</span><span class="n">GeoSeries</span><span class="p">(</span><span class="n">intersection</span><span class="p">))[</span><span class="mi">0</span><span class="p">]</span>
-                
+
                 <span class="c1"># filtering negative and unreasonably large intensities:</span>
-                <span class="k">if</span> <span class="n">intensity</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">intensity</span> <span class="o">&lt;</span> <span class="mi">4000000</span><span class="p">:</span>                            
+                <span class="k">if</span> <span class="n">intensity</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">intensity</span> <span class="o">&lt;</span> <span class="mi">4000000</span><span class="p">:</span>
                     <span class="n">yield_in_cell_magnitude</span> <span class="o">+=</span> <span class="n">distance</span><span class="o">*</span><span class="n">intensity</span>
 
         <span class="k">if</span> <span class="n">yield_in_cell_magnitude</span> <span class="o">&gt;</span> <span class="n">max_yield</span><span class="p">:</span>
@@ -13512,8 +13512,8 @@ change in weight attributable to that cell. These changes in weights are
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Visualizing-field-data-frames-in-geojson.io:">Visualizing field data frames in geojson.io:<a class="anchor-link" href="#Visualizing-field-data-frames-in-geojson.io:">¶</a></h2><p><a href="http://geojson.io/#id=gist:wilsonia/9a1a86b680fa12a27341a517db5850cd&amp;map=16/45.1060/-123.2836">Field 1</a></p>
-<p><a href="http://geojson.io/#id=gist:wilsonia/44526a48e8d33b2de307ef0524625f36&amp;map=17/45.10945/-123.28099">Field 2</a></p>
+<h2 id="Visualizing-field-data-frames-in-geojson.io:">Visualizing field data frames in geojson.io:<a class="anchor-link" href="#Visualizing-field-data-frames-in-geojson.io:">¶</a></h2><p>http://geojson.io/#id=gist:wilsonia/9a1a86b680fa12a27341a517db5850cd&amp;map=16/45.1060/-123.2836</p>
+<p>http://geojson.io/#id=gist:wilsonia/44526a48e8d33b2de307ef0524625f36&amp;map=17/45.10945/-123.28099</p>
 
 </div>
 </div>
@@ -13522,7 +13522,7 @@ change in weight attributable to that cell. These changes in weights are
   </div>
 
 
- 
+
 
 
 
