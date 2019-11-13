@@ -4,6 +4,7 @@
   "pool_height": 0.00002,
   "max_yield_intensity": 2000000,
   "csv_directory": "./yield-data/2018",
+  "csv_filepath": "/home/ian/spatial-crop-yield/yield-data/2018_merged/m.csv",
   "field_boundaries": [
     {
       "name": "field_1",
@@ -32,7 +33,7 @@
       },
       "NE_corner": {
         "latitude": 45.11053,
-        "longitude": -123.27968
+        "longitude": -123.27963
       },
       "SW_corner": {
         "latitude": 45.10214,
